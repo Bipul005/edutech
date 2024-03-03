@@ -28,6 +28,7 @@ exports.createCategory = async (req, res) => {
 
 exports.showAllCategories = async (req, res) => {
 	try {
+		// give all entry present in db but make sure that each entry have name and discriptions.
 		const allCategorys = await Category.find(
 			{},
 			{ name: true, description: true }
@@ -47,7 +48,8 @@ exports.showAllCategories = async (req, res) => {
 exports.categoryPageDetails = async (req, res) => {
 	try {
 		const { categoryId } = req.body;
-
+		//const categoryId = Category._id;
+		console.log("new category is",categoryId);
 		// Get courses for the specified category
 		const selectedCategory = await Category.findById(categoryId)          //populate instuctor and rating and reviews from courses
 			.populate({path:"courses",match:{status:"Published"},populate:([{path:"instructor"},{path:"ratingAndReviews"}])})

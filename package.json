@@ -6,8 +6,22 @@
     "@ramonak/react-progress-bar": "^5.0.3",
     "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.4.0",
+    "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.0.1",
     "concurrently": "^8.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-fileupload": "^1.4.3",
+    "file-upload": "^0.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.0",
+    "nodemailer": "^6.9.11",
+    "nodemon": "^3.1.0",
+    "otp-generator": "^4.0.1",
+    "razorpay": "^2.9.2",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
@@ -33,11 +47,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git"
+    "url": ""
   },
-  "author": "Pranay Gupta",
+  "author": "BIPUL KUMAR",
   "bugs": {
-    "url": "https://github.com/thepranaygupta/react-tailwind-css-starter-pack/issues"
+    
   },
   "scripts": {
     "start": "react-scripts start",
@@ -67,5 +81,10 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "tailwindcss": "^3.2.7"
-  }
+  },
+  "description": "Study Notion is an ED Tech (Education Technology) web application developed using the MERN stack.",
+  "homepage": "https://localhost:3000",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "license": "ISC"
 }

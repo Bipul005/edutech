@@ -17,10 +17,12 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import RatingSlider from '../Components/core/Ratings/RatingSlider';
 
-
+//import{categoryId} from '../services/operations/pageAndComponentData';
 function Home() {
     const [CatalogPageData, setCatalogPageData] = useState(null);
     const categoryID = "6475dbeb49dcc886b5698441";
+   // const categoryID= categoryId;
+
 
     useEffect(() => {
         const fetchCatalogPageData = async () => {
